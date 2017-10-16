@@ -17,12 +17,11 @@ const Map = compose(
   <div>
 
   <GoogleMap
-    defaultZoom = {8}
-    defaultCenter = {{ lat: -34.397, lng: 150.644 }}
+    defaultZoom = {2}
     center = {{lat: props.latitude, lng: props.longitude}}
   >
-    <Marker title="lalalala" position={{ lat: props.latitude, lng: props.longitude }} />
-    <Marker position={{ lat: props.mylat, lng: props.mylong }} />
+    <Marker title="Site Location" position={{ lat: props.latitude, lng: props.longitude }} />
+    <Marker title="Current Location" position={{ lat: props.mylat, lng: props.mylong }} />
 
   </GoogleMap>
   </div>
