@@ -2,18 +2,46 @@ import React from 'react';
 import { compose, withProps } from "recompose";
 import  * as withScriptjs from 'react-google-maps/lib/withScriptjs';
 import { withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
- 
+import {GOOGLE_MAP_URL, API_LOCATION} from './Configuration';
 
 const Map = compose(
+  withProps({
+    googleMapURL: GOOGLE_MAP_URL,
+    loadingElement: <div style={{ height: `100%` }} />,
+    containerElement: <div style={{ height: `400px` }} />,
+    mapElement: <div style={{ height: `100%` }} />
+  }),
   withScriptjs.default,
-  withGoogleMap
-)(props =>
+  withGoogleMap)
+(props => 
+  <div>
+
   <GoogleMap
     defaultZoom = {8}
     defaultCenter = {{ lat: -34.397, lng: 150.644 }}
+    center = {{lat: props.latitude, lng: props.longitude}}
   >
-    <Marker position={{ lat: -34.397, lng: 150.644 }} />
+    <Marker title="lalalala" position={{ lat: props.latitude, lng: props.longitude }} />
+    <Marker position={{ lat: props.mylat, lng: props.mylong }} />
+
   </GoogleMap>
+  </div>
 );
 
-export default Map;
+
+class MyFancyMap extends React.PureComponent{
+  render(){
+    return(
+      <div>
+        <Map  
+          latitude={this.props.latitude}
+          longitude={this.props.longitude}
+          mylat={this.props.mylat}
+          mylong={this.props.mylong}
+        />
+      </div>
+    );
+  }
+}
+
+export default MyFancyMap;

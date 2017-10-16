@@ -5,3 +5,7 @@ button{
 .v-space{
     margin-top: 15px;
 }
+
+button.close{
+    display: none;
+}
