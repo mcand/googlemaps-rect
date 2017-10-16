@@ -1,0 +1,36 @@
+{
+  "name": "geolocation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack -p",
+    "library:build": "cross-env NODE_ENV=production webpack -p --config webpack.config.library.js",
+    "start": "cross-env NODE_ENV=development webpack-dev-server -d",
+    "test": "jest --watch"
+  },
+  "keywords": [],
+  "author": "Andre Furquim",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-react-app": "^3.0.3",
+    "cross-env": "^5.0.5",
+    "enzyme": "^2.9.0",
+    "enzyme-adapter-react-16": "^1.0.1",
+    "jest": "^21.2.1",
+    "react-test-renderer": "^16.0.0",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-bootstrap": "^0.31.3",
+    "react-dom": "^16.0.0",
+    "react-google-maps": "^8.4.2",
+    "react-icons": "^2.2.7",
+    "recompose": "^0.26.0"
+  }
+}
