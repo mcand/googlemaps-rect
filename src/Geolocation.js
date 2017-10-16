@@ -24,10 +24,7 @@ class Geolocation extends React.Component {
     handleLocationClick(){
         axios.get(`${API_LOCATION}`)
         .then(res => {
-            console.log(res.data);
             this.setState({mylat: res.data["latitude"], mylong: res.data["longitude"], hasError: false});
-            console.log(`MY LOCATION ${this.state.mylat} | ${this.state.mylong}`);
-
         })
         .catch(function (error) {
             if (error.response) {       
@@ -48,13 +45,9 @@ class Geolocation extends React.Component {
     }
 
     handleSiteClick(){
-        console.log(this.state.url);
-        console.log(validateURL(this.state.url))
-        console.log(this)
         if (validateURL(this.state.url)){
             axios.get(`${API_LOCATION}${this.state.url}`)
             .then(res => {
-                console.log(res.data);
                 this.setState({latitude: res.data["latitude"], longitude: res.data["longitude"], hasError: false});
 
             })
