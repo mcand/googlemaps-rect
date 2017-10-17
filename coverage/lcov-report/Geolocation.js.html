@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for Geolocation.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="index.html">All files</a> Geolocation.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>16/32</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">40% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>16/32</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import { Grid, Row, Col, Button } from 'react-bootstrap';
+import FieldGroup from './FieldGroup';
+import MyFancyMap from './Map';
+import axios from 'axios';
+import {GOOGLE_MAP_URL, API_LOCATION} from './Configuration';
+import validateURL from './validateUrl';
+import Alert from './Alert';
+&nbsp;
+class Geolocation extends React.Component {
+    constructor(){
+        super();
+        this.state = { url: '', latitude: 0, longitude: 0, hasError: false, mylat: null, mylong: null };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSiteClick = this.handleSiteClick.bind(this);
+        this.handleLocationClick = this.handleLocationClick.bind(this);
+        this.handleReset = this.handleReset.bind(this); 
+    }
+&nbsp;
+    handleChange(e){
+        this.setState({url: e.target.value})
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    ha</span>ndleLocationClick(){
+<span class="cstat-no" title="statement not covered" >        axios.get(`${API_LOCATION}`)</span>
+        .then(<span class="fstat-no" title="function not covered" >re</span>s =&gt; {
+<span class="cstat-no" title="statement not covered" >            this.setState({mylat: res.data["latitude"], mylong: res.data["longitude"], hasError: false});</span>
+        })
+        .catch(<span class="fstat-no" title="function not covered" >fu</span>nction (error) {
+<span class="cstat-no" title="statement not covered" >            if (error.response) {       </span>
+<span class="cstat-no" title="statement not covered" >              console.log(error.response.data);</span>
+<span class="cstat-no" title="statement not covered" >              console.log(error.response.status);</span>
+<span class="cstat-no" title="statement not covered" >              console.log(error.response.headers);</span>
+            } else <span class="cstat-no" title="statement not covered" >if (error.request) {</span>
+<span class="cstat-no" title="statement not covered" >              console.log(error.request);</span>
+            } else {
+<span class="cstat-no" title="statement not covered" >              console.log('Error', error.message);</span>
+            }
+<span class="cstat-no" title="statement not covered" >            console.log(error.config);</span>
+          });
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    ha</span>ndleReset(){
+<span class="cstat-no" title="statement not covered" >        this.setState({mylat: this.state.latitude, mylong: this.state.longitude});</span>
+    }
+&nbsp;
+    handleSiteClick(){
+        if (validateURL(this.state.url)){
+            axios.get(`${API_LOCATION}${this.state.url}`)
+            .then(<span class="fstat-no" title="function not covered" >re</span>s =&gt; {
+<span class="cstat-no" title="statement not covered" >                this.setState({latitude: res.data["latitude"], longitude: res.data["longitude"], hasError: false});</span>
+&nbsp;
+            })
+            .catch(function (error) {
+                <span class="missing-if-branch" title="if path not taken" >I</span>if (error.response) {
+<span class="cstat-no" title="statement not covered" >                  console.log(error.response.data);</span>
+<span class="cstat-no" title="statement not covered" >                  console.log(error.response.status);</span>
+<span class="cstat-no" title="statement not covered" >                  console.log(error.response.headers);</span>
+                } else <span class="missing-if-branch" title="else path not taken" >E</span>if (error.request) {
+                  console.log(error.request);
+                } else {
+<span class="cstat-no" title="statement not covered" >                  console.log('Error', error.message);</span>
+                }
+                console.log(error.config);
+              });
+        } else {
+            this.setState({hasError: true});
+        }
+        
+    }
+&nbsp;
+    render(){
+        const { url, latitude, longitude, hasError, mylat, mylong} = this.state;
+&nbsp;
+        return(
+            &lt;div&gt;
+                &lt;h1 className="text-center"&gt;Geolocation Component&lt;/h1&gt;
+                &lt;Grid&gt;
+                &lt;Row className="show-grid"&gt;
+                        &lt;Col md={12}&gt;
+                            &lt;Alert hasError={hasError} type="danger" title="Invalid URL" message="You have entered an invalid URL!" /&gt;
+                        &lt;/Col&gt;
+                    &lt;/Row&gt;
+                    &lt;Row className="show-grid"&gt;
+                        &lt;Col md={12}&gt;
+                            &lt;form&gt;
+                                &lt;FieldGroup
+                                    id="url"
+                                    type="text"
+                                    placeholder="Enter URL"
+                                    bsSize="large"
+                                    onChange={this.handleChange}
+                                /&gt;
+                            &lt;/form&gt;
+                        &lt;/Col&gt;
+                    &lt;/Row&gt;
+                    &lt;Row className="show-grid"&gt;
+                        &lt;div className="text-center"&gt;
+                            &lt;Button id="locate" bsStyle="primary" bsSize="large" onClick={this.handleSiteClick}&gt;Locate&lt;/Button&gt;
+                            &lt;Button id="mylocation" bsStyle="primary" bsSize="large" onClick={this.handleLocationClick}&gt;My Location&lt;/Button&gt;
+                            &lt;Button id="reset" bsStyle="danger" bsSize="large" onClick={this.handleReset}&gt;Reset&lt;/Button&gt;
+                        &lt;/div&gt;
+                    &lt;/Row&gt;
+                    &lt;Row&gt;
+                        &lt;Col md={12}&gt;
+                            &lt;div className="v-space"&gt;&lt;/div&gt;
+                            &lt;MyFancyMap latitude={latitude} longitude={longitude}  mylat={mylat} mylong={mylong}/&gt;
+                        &lt;/Col&gt;
+                    &lt;/Row&gt;
+                &lt;/Grid&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+&nbsp;
+export default Geolocation;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 17 2017 01:41:32 GMT-0200 (-02)
+</div>
+</div>
+<script src="prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="sorter.js"></script>
+</body>
+</html>

@@ -27,7 +27,6 @@ const Map = compose(
   </div>
 );
 
-
 class MyFancyMap extends React.PureComponent{
   render(){
     return(

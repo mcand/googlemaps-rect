@@ -30,7 +30,7 @@ describe("Validate URL cases", ()=>{
     })
 
     it('validates correctly an invalid URL containg an invalid ending', () => {
-        expect(validateUrl("uol.a"));
+        expect(validateUrl("uol.a")).toBe(false);
     })
 
 });

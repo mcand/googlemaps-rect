@@ -64,7 +64,6 @@ class Geolocation extends React.Component {
                 console.log(error.config);
               });
         } else {
-            console.log("emtrou");
             this.setState({hasError: true});
         }
         
@@ -97,9 +96,9 @@ class Geolocation extends React.Component {
                     </Row>
                     <Row className="show-grid">
                         <div className="text-center">
-                            <Button bsStyle="primary" bsSize="large" onClick={this.handleSiteClick}>Locate</Button>
-                            <Button bsStyle="primary" bsSize="large" onClick={this.handleLocationClick}>My Location</Button>
-                            <Button bsStyle="danger" bsSize="large" onClick={this.handleReset}>Reset</Button>
+                            <Button id="locate" bsStyle="primary" bsSize="large" onClick={this.handleSiteClick}>Locate</Button>
+                            <Button id="mylocation" bsStyle="primary" bsSize="large" onClick={this.handleLocationClick}>My Location</Button>
+                            <Button id="reset" bsStyle="danger" bsSize="large" onClick={this.handleReset}>Reset</Button>
                         </div>
                     </Row>
                     <Row>
